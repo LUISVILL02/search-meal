@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+.dark {
+    --color-background: #262626;
+    --color-text: #FFFFFF;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    --font-display: "Ubuntu", "sans-serif";
+
+    --color-primary: #FF6B00; /* Naranja vibrante */
+    --color-secondary: #2ECC71; /* Verde fresco */
+    --color-background: #FFFFFF; /* Fondo claro */
+    --color-text: #333333; /* Texto oscuro */
+    --color-border: #DDDDDD; /* Bordes suaves */
+}
+
+
+body{
+    font-family: var(--font-display);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 0 15% 10% 15%;
+}
