@@ -5,7 +5,6 @@ import { SkeletonLoading } from "../loaders/SkeletonLoading";
 
 export function MealInfo() {
     const { meal, loading } = useMealById();
-    console.log(meal);
     
   return (
     <div className="mb-10">
